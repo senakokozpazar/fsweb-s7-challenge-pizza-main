@@ -1,0 +1,12 @@
+.siparis_header {
+  background-color: var(--kirmizi);
+  width: 100vw;
+  height: 10vh;
+  position: sticky;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}

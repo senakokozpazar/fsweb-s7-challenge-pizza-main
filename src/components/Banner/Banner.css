@@ -1,0 +1,51 @@
+.home_banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../Assets/home-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.satisfy {
+  color: var(--sari);
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+}
+
+.roboto {
+  font-family: "Barlow";
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.banner_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.aciktim_btn {
+  background-color: var(--sari);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 7em;
+}

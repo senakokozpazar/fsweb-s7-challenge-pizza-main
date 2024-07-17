@@ -1,0 +1,98 @@
+.siparis_toplam {
+  width: 100%;
+  max-width: 40em;
+  margin-left: 320px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.btn-group button:first-child {
+  background-color: var(--sari);
+  border: 1px solid var(--sari);
+  color: white;
+}
+
+.btn-group button:last-child {
+  background-color: var(--sari);
+  border: 1px solid var(--sari);
+  color: white;
+}
+
+.btn-group button:nth-child(2) {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.toplam-container {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px; /* İçeriği sınıra yakın yapar */
+  width: 400px; /* Maksimum genişlik */
+  margin: 20px;
+}
+
+.baslik {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Barlow";
+}
+
+.secimler,
+.toplam {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.secimler p {
+  color: var(--acik-gri);
+  font-family: "Roboto Condensed";
+  font-size: "20px";
+  font-weight: bold;
+}
+
+.toplam p {
+  color: var(--kirmizi);
+  font-family: "Roboto Condensed";
+  font-size: "20px";
+  font-weight: bold;
+}
+
+.submit_btn {
+  margin-top: 20px;
+}
+
+.submit_btn button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--sari);
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  border: none;
+  cursor: pointer;
+}
+
+.submit_btn button:disabled {
+  background-color: var(--sari);
+  cursor: not-allowed;
+}

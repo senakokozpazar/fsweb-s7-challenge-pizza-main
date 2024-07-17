@@ -1,0 +1,42 @@
+.siparis_not {
+  width: 100%;
+  max-width: 40em;
+  margin-left: 320px;
+  margin-top: 50px;
+}
+
+.baslik {
+  font-family: "Barlow";
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.not_alani textarea {
+  width: 600px;
+  height: 100px;
+  background-color: var(--bej);
+  border: none;
+  border: 5px;
+  font-family: "Barlow";
+  font-size: 16px;
+}
+
+textarea::placeholder {
+  text-align: center;
+  padding: 40px;
+}
+
+.isim_alani {
+  font-family: "Barlow";
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.isim_alani textarea {
+  background-color: var(--bej);
+  border: none;
+  border: 5px;
+  font-family: "Barlow";
+  width: 600px;
+  font-size: 16px;
+}

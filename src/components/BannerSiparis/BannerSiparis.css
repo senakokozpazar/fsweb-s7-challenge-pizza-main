@@ -1,0 +1,62 @@
+.banner_siparis {
+  background-image: url("../../Assets/form-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--bej);
+  margin-top: 0;
+  min-height: 30vh;
+}
+.pizza_aciklama_container {
+  background-color: var(--bej);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza_aciklama {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 40em;
+}
+
+.links {
+  color: black;
+  font-family: "Barlow";
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.active-link {
+  color: var(--kirmizi);
+}
+
+.pizza_baslik > p {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fiyat_puan_yorum {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Barlow";
+}
+
+.fiyat_puan_yorum p:first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pizza_metin {
+  text-align: justify;
+  font-family: "Barlow";
+  margin-top: 50px;
+  line-height: 2em;
+}

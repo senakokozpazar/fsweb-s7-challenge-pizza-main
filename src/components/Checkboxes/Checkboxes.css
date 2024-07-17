@@ -1,0 +1,66 @@
+.checkboxes {
+  width: 100%;
+  max-width: 40em;
+  margin-left: 320px;
+  margin-top: 50px;
+}
+
+.malzeme_baslik > p:first-child {
+  font-family: "Barlow";
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.checkbox_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox_item input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox_item label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--bej);
+  border-radius: 5px;
+  background-color: var(--bej);
+  cursor: pointer;
+  padding-left: 25px;
+  font-size: 16px;
+  font-family: "Barlow";
+}
+
+.checkbox_item input[type="checkbox"] {
+  margin-right: 20px; /* Checkbox ile metin arasındaki boşluk */
+}
+.checkbox_item input[type="checkbox"]:checked + label {
+  background-color: var(--sari);
+  border-color: var(--sari);
+}
+
+.checkbox_item label::after {
+  content: "\2714"; /* Tik işareti karakteri */
+  font-size: 20px; /* Tik işareti büyüklüğü */
+  font-weight: bold;
+  color: black; /* Tik işareti rengi */
+  position: absolute;
+  left: 5px; /* Checkbox kutusu içinde hizalama */
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.checkbox_item input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}

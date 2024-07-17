@@ -1,0 +1,74 @@
+.radio_select_container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40em;
+  display: flex;
+  justify-content: space-between;
+}
+.zorunlu {
+  color: var(--kirmizi);
+}
+.radio_btn {
+  margin-top: 20px;
+}
+.radio_btn > p:first-child {
+  font-family: "Barlow";
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.radio_inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.radio_inputs input[type="radio"] {
+  display: none;
+}
+
+.radio_inputs label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--bej);
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio_inputs input[type="radio"]:checked + label {
+  background-color: var(--sari);
+}
+
+.select_area > p:first-child {
+  font-family: "Barlow";
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.select_area {
+  margin-top: 20px;
+}
+
+.select_area select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Barlow";
+  font-size: 16px;
+  border: none;
+  background-color: var(--bej);
+}
+
+.select_area select:focus {
+  outline: none;
+}
+
+.select_area option {
+  font-family: "Barlow";
+  font-size: 16px;
+}
+.select_area option:checked {
+  background-color: var(--sari);
+}

@@ -1,0 +1,51 @@
+.food-card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Optional: Adds space around the container */
+}
+
+.food-card {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.food-card:hover {
+  background-color: whitesmoke;
+  border: 1px solid 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card-img {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+}
+
+.food-card > h4 {
+  margin: 20px 0 10px 0; /* Adds space above and below the h4 */
+  text-align: left;
+  font-family: "Barlow";
+  font-weight: 600;
+}
+
+.food-card-details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.food-card-details p {
+  margin: 5px 0;
+}
+
+.food-card-details p:last-child {
+  font-weight: 600;
+}

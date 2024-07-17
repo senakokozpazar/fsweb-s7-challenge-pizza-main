@@ -1,0 +1,16 @@
+.navbar-container {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.navbar-item img {
+  margin-right: 15px;
+  margin-bottom: -10px;
+  padding: 5px;
+}
+.navbar-item > span {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+}

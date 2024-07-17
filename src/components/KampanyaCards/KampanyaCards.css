@@ -1,0 +1,44 @@
+.kampanya-kard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 90vw;
+  column-gap: 10px;
+}
+
+.left-card {
+  background-image: url("../../Assets/kart-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 310px;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.right-top {
+  background-image: url("../../Assets/kart-2.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
+}
+
+.right-bottom {
+  background-image: url("../../Assets/kart-3.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
+}
