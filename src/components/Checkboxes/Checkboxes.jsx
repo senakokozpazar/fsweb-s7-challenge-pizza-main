@@ -12,7 +12,7 @@ export default function Checkboxes(props){
       <div className='malzeme_baslik'>
         <p>Ek Malzemeler</p>
         <p style={{fontFamily:"Barlow", fontWeight:500, margin:"5px"}}>5₺</p>
-        {errors.malzemeler && <p style={{color:('var(--kirmizi)'), fontFamily:"Barlow"}}>{errorMessages.malzemeler}</p>}
+        {errors.malzemeler && <p data-cy="error-message" style={{color:('var(--kirmizi)'), fontFamily:"Barlow"}} >{errorMessages.malzemeler}</p>}
       </div>
 
       <div className="checkbox_grid">
@@ -25,6 +25,7 @@ export default function Checkboxes(props){
                 value={malzeme}
                 checked={formData.malzemeler.includes(malzeme)}
                 onChange={handleCheckboxChange}
+                data-cy="checkbox-input"
               />
               <label htmlFor={malzeme}>{malzeme}</label>
             </div>))}

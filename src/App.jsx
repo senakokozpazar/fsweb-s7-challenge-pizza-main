@@ -42,7 +42,7 @@ function App() {
     hamur: "Hamur seçiniz",
     malzemeler: "En az 5 en fazla 10 malzeme seçiniz",
     isim: "En az 3 karakter giriniz"
-  }
+  } 
 
 
   const handleSizeChange = (event) => {

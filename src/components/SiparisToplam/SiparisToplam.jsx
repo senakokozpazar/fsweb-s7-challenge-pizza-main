@@ -30,7 +30,7 @@ export default function SiparisToplam(props){
           <p>{(price * formData.adet)}₺</p>
         </div>
 
-        <div className="submit_btn">
+        <div className="submit_btn" data-cy="submit-button">
           <button disabled={!isValid} onClick={handleSubmit}>SİPARİŞ VER</button>
         </div>
      </div>

@@ -29,6 +29,7 @@ export default function SiparisNot(props){
         value={formData.isim}
         onChange={handleTextChange}
         placeholder='Adınız'
+        data-cy="name-input"
       />
     </div>
    
