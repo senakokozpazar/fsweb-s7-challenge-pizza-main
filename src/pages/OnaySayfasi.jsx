@@ -29,3 +29,5 @@ export default function OnaySayfasi(props){
     </div>
   )
 }
+
+/* Kendime not: "il meglio è l'inimico del bene" Voltaire" */
