@@ -25,3 +25,23 @@
   justify-content: center;
   padding: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .p-container {
+    gap: 20px;
+  }
+
+  .red-p > p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .big-p > p {
+    margin-top: -10px;
+    font-size: 30px;
+  }
+
+  .btn-container {
+    padding: 10px;
+  }
+}

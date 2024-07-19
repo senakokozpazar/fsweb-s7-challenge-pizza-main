@@ -16,3 +16,8 @@
   height: 30px;
   width: 100px;
 }
+@media only screen and (max-width: 600px) {
+  .siparis-btn > button {
+    margin-top: -25px;
+  }
+}

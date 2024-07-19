@@ -43,7 +43,7 @@ function App() {
     malzemeler: "En az 5 en fazla 10 malzeme seçiniz",
     isim: "En az 3 karakter giriniz"
   } 
-
+  const [count, setCount] = useState(1);
 
   const handleSizeChange = (event) => {
     const { value } = event.target;
@@ -118,6 +118,7 @@ function App() {
         ...formData,
         adet: formData.adet - 1
       });
+      setCount(count-1)
     }
   }
   const increaseCount = () => {
@@ -125,6 +126,7 @@ function App() {
       ...formData,
       adet: formData.adet + 1
     });
+    setCount(count+1)
   };
  
   useEffect(() => {
@@ -171,7 +173,7 @@ function App() {
         <Route path = "/siparissayfasi" exact>
           <SiparisSayfasi formData={formData} handleSizeChange={handleSizeChange}
           handleDoughChange={handleDoughChange} ekMalzemeler={ekMalzemeler} handleCheckboxChange={handleCheckboxChange} 
-          handleTextChange={handleTextChange} price={price}  decreaseCount={decreaseCount} increaseCount={increaseCount} malzemeFiyat={malzemeFiyat} isValid={isValid} handleSubmit={handleSubmit} errors={errors} errorMessages={errorMessages}/>
+          handleTextChange={handleTextChange} price={price}  decreaseCount={decreaseCount} increaseCount={increaseCount} malzemeFiyat={malzemeFiyat} isValid={isValid} handleSubmit={handleSubmit} errors={errors} errorMessages={errorMessages} count={count}/>
         </Route>
         <Route path = "/onaysayfasi" exact>
           <OnaySayfasi formData={formData} pizzaResponse={pizzaResponse}/>

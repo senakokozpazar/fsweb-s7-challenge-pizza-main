@@ -49,3 +49,40 @@
 .food-card-details p:last-child {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+  .food-card-container {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .food-card {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .food-card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .food-card > h4 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .food-card-details {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .food-card-details p {
+    margin: 3px 0;
+  }
+
+  .food-card-details p:last-child {
+    font-weight: 600;
+  }
+}

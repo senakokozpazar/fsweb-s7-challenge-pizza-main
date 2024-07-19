@@ -1,14 +1,14 @@
 import './SiparisToplam.css'
 
 export default function SiparisToplam(props){
- const {formData, price, decreaseCount, increaseCount, malzemeFiyat, isValid, handleSubmit} = props;
+ const {formData, price, decreaseCount, increaseCount, malzemeFiyat, isValid, handleSubmit, count} = props;
 
   return (
     <div className="siparis_toplam">
 
         <div class="btn-group">
           <button onClick={decreaseCount}>-</button>
-          <button>1</button>
+          <button>{count}</button>
           <button onClick={increaseCount}>+</button>
         </div>
 

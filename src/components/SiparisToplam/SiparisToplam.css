@@ -43,8 +43,8 @@
 .toplam-container {
   border: 1px solid #ccc;
   border-radius: 15px;
-  padding: 20px; /* İçeriği sınıra yakın yapar */
-  width: 400px; /* Maksimum genişlik */
+  padding: 20px;
+  width: 400px;
   margin: 20px;
 }
 
@@ -95,4 +95,30 @@
 .submit_btn button:disabled {
   background-color: var(--sari);
   cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+  .siparis_toplam {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toplam-container {
+    width: 90%;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .btn-group button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .secimler p,
+  .toplam p {
+    font-size: 14px;
+  }
 }

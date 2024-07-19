@@ -42,7 +42,7 @@
 }
 
 .checkbox_item input[type="checkbox"] {
-  margin-right: 20px; /* Checkbox ile metin arasındaki boşluk */
+  margin-right: 20px;
 }
 .checkbox_item input[type="checkbox"]:checked + label {
   background-color: var(--sari);
@@ -50,12 +50,12 @@
 }
 
 .checkbox_item label::after {
-  content: "\2714"; /* Tik işareti karakteri */
-  font-size: 20px; /* Tik işareti büyüklüğü */
+  content: "\2714";
+  font-size: 20px;
   font-weight: bold;
-  color: black; /* Tik işareti rengi */
+  color: black;
   position: absolute;
-  left: 5px; /* Checkbox kutusu içinde hizalama */
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
@@ -63,4 +63,27 @@
 
 .checkbox_item input[type="checkbox"]:checked + label::after {
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .checkboxes {
+    margin: 50px;
+  }
+
+  .checkbox_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .checkbox_item label {
+    width: 25px;
+    height: 25px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .checkbox_item label::after {
+    font-size: 16px;
+    left: 3px;
+  }
 }

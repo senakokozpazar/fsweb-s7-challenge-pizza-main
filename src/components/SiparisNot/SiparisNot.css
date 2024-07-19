@@ -40,3 +40,21 @@ textarea::placeholder {
   width: 600px;
   font-size: 16px;
 }
+
+@media only screen and (max-width: 600px) {
+  .siparis_not {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .not_alani textarea,
+  .isim_alani textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  textarea::placeholder {
+    padding: 20px;
+  }
+}

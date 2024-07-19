@@ -8,7 +8,7 @@ import SiparisToplam from "../components/SiparisToplam/SiparisToplam"
 
 
 export default function SiparisSayfasi(props){
- const {formData, handleSizeChange, handleDoughChange, ekMalzemeler, handleCheckboxChange, handleTextChange, price, decreaseCount, increaseCount, malzemeFiyat, isValid, handleSubmit, errors, errorMessages} = props
+ const {formData, handleSizeChange, handleDoughChange, ekMalzemeler, handleCheckboxChange, handleTextChange, price, decreaseCount, increaseCount, malzemeFiyat, isValid, handleSubmit, errors, errorMessages, count} = props
   return(
   <>
     <SiparisHeader />
@@ -16,7 +16,7 @@ export default function SiparisSayfasi(props){
     <RadioAndSelect formData={formData} handleSizeChange={handleSizeChange} handleDoughChange={handleDoughChange} errors={errors} errorMessages={errorMessages}/>
     <Checkboxes formData={formData} ekMalzemeler={ekMalzemeler} handleCheckboxChange={handleCheckboxChange} errors={errors} errorMessages={errorMessages}/>
     <SiparisNot formData={formData} handleTextChange={handleTextChange} errors={errors} errorMessages={errorMessages}/>
-    <SiparisToplam formData={formData} price={price} decreaseCount={decreaseCount} increaseCount={increaseCount} malzemeFiyat={malzemeFiyat} isValid={isValid} handleSubmit={handleSubmit}/>
+    <SiparisToplam formData={formData} price={price} decreaseCount={decreaseCount} increaseCount={increaseCount} malzemeFiyat={malzemeFiyat} isValid={isValid} handleSubmit={handleSubmit} count={count}/>
     <Footer />
   </>
   )
